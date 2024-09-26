@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>biodata</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <div class="container">
+    <div class="foto">
+        <img src="poto.jpg"/>
+        <li>Julianwan Azhari</li>
+        <li>SI20230017</li>
+        <li>Sistem Informasi</li>
+    </div>
+        <div class="icon">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-twitter"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-envelope-at-fill"></i>
+        </div>
+        <div class="biodata">
+            <ul class="menu">
+                <a>Beranda</a>
+                <a onclick="tentang()">Tentang</a>
+                <a onclick="pengalaman()">Pengalaman</a>
+                <a onclick="pendidikan()">Pendidikan</a>
+                <a onclick="kemampuan()">Kemampuan</a>
+                <a onclick="penghargaan()">Penghargaan</a>
+                <a onclick="hobi()">Hobi</a>
+            </ul>
+        </div>
+    </div>
+    <div id="BG">
+        <p id="kata"></p>
+    </div>
+
+    <script>
+        function BGcolor(){
+            BG.style.backgroundColor="white";
+            BG.style.padding="10px";
+        }
+        function tentang(){
+            BGcolor();
+            kata.textContent="nama saya JULIAWAN ASHARI,saya 4 bersaudara cuman saya yang cowok jadi beban saya sangat besar, dan hanya saya harapan untuk bisa mengangkat drajat orang tua,";
+        }
+        function pengalaman(){
+            BGcolor();
+            kata.textContent="saya pernah maggang di toko percetakan gian com yang bertepat di JL. pemuda NO.01, gomong lama depa sdn 16 mataram"
+        }
+        function pendidikan(){
+            BGcolor();
+            kata.textContent="TK DWI TUNAS MUDA DURIAN(2007-2011) SDN KARANGTENGAK(2011-017) SMPI AD-UHA(2017-2019) SMKI AD-DUHA(2019-2023)"
+        }
+        function kemampuan(){
+            BGcolor();
+            kata.textContent="KEMAMPUAN SYA BANYAK,BISA NGOPI TANPA AIR BISA MAIN GAME MOBILLEGENDS MENGGUNAKAN SEMUA ROLL"
+        }
+        function penghargaan(){
+            BGcolor();
+            kata.textContent="MUNGKIN SEKARANG SAYA BELUM MEMPUNYAI PENGHARGAAN YANG BISA YANG DAN ORANG TUA BANGGAKAN, TAPI ENTAH ESOK ATAU LUSA PASTI AKAN SAYA DAPATKAN PENGHARGGAN YANG MEMBUAT ORANG TUA SAYA BANGGA"
+        }
+        function hobi(){
+            BGcolor();
+            kata.textContent="HOBI SAYA BNAYAK ANTARNYA= MAIN GAME ONLINE, OLAH RAGA, MAIN BOLA, MAIN FUTSAL, MANCING, MAIN PS"
+        }
+    </script>
+</body>
+</html>
